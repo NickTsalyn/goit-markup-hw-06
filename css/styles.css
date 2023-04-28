@@ -181,9 +181,8 @@ body {
   background: #404bbf;
   border-radius: 2px;
   position: absolute;
-  top: 68px;
   left: 0;
-  /* margin-top: 20px; */
+  bottom: 0;
 }
 
 /**
@@ -599,9 +598,8 @@ footer {
   background: #404bbf;
   border-radius: 2px;
   position: absolute;
-  top: 68px;
   left: 0;
-  /* margin-top: 20px; */
+  bottom: 0;
 }
 
 .menu-list {
