@@ -550,26 +550,25 @@ footer {
   color: #ffffff;
   background: #4d5ae5;
   border-radius: 4px;
+  border: none;
+  cursor: pointer;
   min-width: 165px;
   height: 40px;
-  padding-left: 24px;
   transition: background var(--transition-dur-timing-func);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .subscr-btn:hover,
 .subscr-btn:focus {
-  background: #404BBF;
+  background: #404bbf;
 }
 
 .subscr-icon {
-  position: absolute;
-  top: 50%;
-  right: 24px;
-  transform: translateY(-50%);
+
   fill: var(--primary-background-color);
 }
-
-
 
 /**
   |============================
@@ -596,7 +595,7 @@ footer {
 
 .modal {
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -621,13 +620,12 @@ footer {
   top: 24px;
   right: 24px;
   cursor: pointer;
-  transition: background var(--transition-dur-timing-func), border-radius var(--transition-dur-timing-func);
+  transition: background var(--transition-dur-timing-func);
 }
 
 .modal-btn-close:hover,
 .modal-btn-close:focus {
   background: #404bbf;
-  border-radius: 4px;
 }
 
 .modal-btn-icon {
@@ -655,15 +653,19 @@ footer {
   flex-direction: column;
 }
 
-.modal-form-comments {
-  height: 120px;
+.modal-form-field {
   margin-bottom: 8px;
 }
+
+.modal-form-field-comments {
+  margin-bottom: 16px;
+}
+
+
 .modal-form-input-desc {
   display: block;
-  font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 14px;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
@@ -675,7 +677,7 @@ footer {
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: border-color var(--transition-dur-timing-func);
 }
 
@@ -725,7 +727,6 @@ footer {
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: flex;
-  cursor: pointer;
   position: relative;
   margin-bottom: 24px;
 }
@@ -736,7 +737,6 @@ footer {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  cursor: pointer;
   margin-right: 8px;
 }
 
@@ -771,6 +771,8 @@ footer {
   align-self: center;
   padding: 16px 32px;
   text-align: center;
+  cursor: pointer;
+  border: none;
   letter-spacing: 0.04em;
   color: #ffffff;
   background: #4d5ae5;
@@ -783,6 +785,13 @@ footer {
 .modal-submit-btn:hover {
   background-color: #404bbf;
   color: #ffffff;
+}
+
+.modal-form-check-link {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
 
 /**

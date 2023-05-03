@@ -374,13 +374,12 @@
         <form>
           <p class="subscr-text">Subscribe</p>
           <div class="subscr-wrapper">
-            <label>
-              <input type="email" name="user_subscription" placeholder="Email" class="subscr-input" />
-            </label>
-            <button type="submit" class="subscr-btn">Subscribe</button>
-            <svg width="24" height="24" class="subscr-icon">
-              <use href="./images/icons.svg#subscr"></use>
-            </svg>
+            <input type="email" name="user_subscription" placeholder="Email" class="subscr-input" />
+            <button type="submit" class="subscr-btn">
+              Subscribe<svg width="24" height="24" class="subscr-icon">
+                <use href="./images/icons.svg#subscr"></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>
@@ -433,19 +432,19 @@
               </svg>
             </span>
           </label>
-          <label class="modal-form-field">
+          <label class="modal-form-field-comments">
             <span class="modal-form-input-desc">Comment</span>
             <textarea name="user_comments" placeholder="Text input" class="modal-form-comments"></textarea>
           </label>
           <input id="user_policy" type="checkbox" name="user_policy" class="modal-form-check visually-hidden" />
           <label for="user_policy" class="modal-form-check-desc">
-            <span class="modal-form-fake-check" required>
+            <span class="modal-form-fake-check">
               <svg width="10" height="8" class="modal-form-fake-icon">
                 <use href="./images/icons.svg#fake-check"></use>
               </svg>
             </span>
             I accept the terms and conditions of the&nbsp;
-            <a href="">Privacy Policy</a>
+            <a href="" class="modal-form-check-link">Privacy Policy</a>
           </label>
           <button type="submit" class="modal-submit-btn">Send</button>
         </form>
